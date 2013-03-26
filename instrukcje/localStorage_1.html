@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Laboratorium: Mobile Web z HTML5</title>
+    <meta name="viewport" content="width=device-width">
+</head>
+<body>
+<h1>Local storage</h1>
+
+<h3>Uwaga: localStorage testujemy przez HTTP, nie bezpośrednio z pliku</h3>
+<ul>
+    <li>W tej części dodamy opcję automatycznego zapisu danych z formularza do localStorage</li>
+    <li>Będziemy dodawać kod do strony HTML nad którą pracowaliśmy w częsci dotyczącej nowych elementów formularza.</li>
+    <li>Kod który będziemy pisać najlepiej dodać w tagu script i umieścić go tuż przed zamknięciem tagu body</li>
+    <li>Sugerujemy aby na początku zarejestrować funkcje, które będą wywoływane po wpisaniu danych do każdego z pól
+        formularza. Można użyć biblioteki <a href="http://zeptojs.com/">zepto.js</a>, która jest dostępna lokalnie.
+    </li>
+    <li>Podpowiedź: $("[name='age']").change(function() {}) pozwala nam podpiąć się pod zmiany na elemencie formularza z
+        atrybutem name='age'
+    </li>
+    <li>Chcemy aby zmiana każdego elementu formularza powodowała automatyczne zapisanie jego wartości do localStorage
+    </li>
+    <li>Podpowiedź: $(this).attr("name") pozwala odczytać wartość atrybutu name, zakładając, że this wskazuje na obiekt
+        elementu formularza który się zmienił. Podobnie $(this).val() pozwala nam odczytać wartość tekstową pola
+        formularza.
+    </li>
+    <li>Zapis do localstorage: localStorage.setItem(key, value);</li>
+    <li>Aby przetestować czy dane zapisują sie do localStorage należy uruchomić aplikację na serwerze HTTP</li>
+    <li>Postarajmy się na bieżąco usuwać duplikację w kodzie. Możemy skorzystać z idiomów programowania funkcyjnego.
+    </li>
+
+</ul>
+
+</body>
+</html>
