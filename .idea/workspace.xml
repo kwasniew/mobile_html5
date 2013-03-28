@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e080aefa-8ecf-407a-8365-24aaa5d88ecc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lab_rozwiazania/forms.html" afterPath="$PROJECT_DIR$/lab_rozwiazania/forms.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lab_rozwiazania/gestures.html" afterPath="$PROJECT_DIR$/lab_rozwiazania/gestures.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lab_rozwiazania/touchmove.html" afterPath="$PROJECT_DIR$/lab_rozwiazania/touchmove.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrukcje/gestures_info.html" afterPath="$PROJECT_DIR$/instrukcje/gestures_info.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrukcje/touchmove_info.html" afterPath="$PROJECT_DIR$/instrukcje/touchmove_info.html" />
     </list>
     <ignored path="mobile_html5.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -80,10 +79,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="touchmove.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="touchmove.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lab_rozwiazania/touchmove.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="11" selection-start="772" selection-end="772" vertical-scroll-proportion="0.9236641">
+            <state line="30" column="11" selection-start="772" selection-end="772" vertical-scroll-proportion="-15.125">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="touchmove_info.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/instrukcje/touchmove_info.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="64" selection-start="386" selection-end="386" vertical-scroll-proportion="-6.875">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gestures_info.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/instrukcje/gestures_info.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="64" selection-start="382" selection-end="382" vertical-scroll-proportion="0.41984734">
               <folding />
             </state>
           </provider>
@@ -110,6 +127,8 @@
         <option value="$PROJECT_DIR$/lab_rozwiazania/forms.html" />
         <option value="$PROJECT_DIR$/lab_rozwiazania/gestures.html" />
         <option value="$PROJECT_DIR$/lab_rozwiazania/touchmove.html" />
+        <option value="$PROJECT_DIR$/instrukcje/touchmove_info.html" />
+        <option value="$PROJECT_DIR$/instrukcje/gestures_info.html" />
       </list>
     </option>
   </component>
@@ -177,6 +196,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="lab_rozwiazania" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mobile_html5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mobile_html5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="instrukcje" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -412,7 +445,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lab_rozwiazania/touchmove.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="11" selection-start="772" selection-end="772" vertical-scroll-proportion="0.9236641">
+        <state line="30" column="11" selection-start="772" selection-end="772" vertical-scroll-proportion="-15.125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/instrukcje/touchmove_info.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="64" selection-start="386" selection-end="386" vertical-scroll-proportion="-6.875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/instrukcje/gestures_info.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="64" selection-start="382" selection-end="382" vertical-scroll-proportion="0.41984734">
           <folding />
         </state>
       </provider>
