@@ -23,6 +23,12 @@
 		var square = document.getElementById("square");
 
 		// Add your code here
+        square.addEventListener("touchmove", function(event) {
+            event.preventDefault(); // scroll prevention
+
+            square.style.left = event.targetTouches[0].screenX - 40 + "px";
+            square.style.top = event.targetTouches[0].screenY - 40 + "px";
+        });
 	</script>
 </body>
 </html>

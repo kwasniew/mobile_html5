@@ -1,44 +1,84 @@
 <!DOCTYPE >
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
-	<title>HTML5 - nowe elemty formularza</title>
-	
-	<style>
-		div {
-			padding-bottom: 2em;
-			margin-bottom: 2em;
-		}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>HTML5 - nowe elemty formularza</title>
 
-		form input, form label {
-		    float: left;
-		    clear: left;
-		}
-	</style>
+    <style>
+        div {
+            padding-bottom: 2em;
+            margin-bottom: 2em;
+        }
+
+        form input, form label {
+            float: left;
+            clear: left;
+        }
+    </style>
 </head>
 <body>
-	<h1>HTML5 - nowe elementy formularza</h1>
-	<form id="form">
-		<div>
-			<label>Imię:</label> <input type="text" name="name"/> 
-		</div>
-		<div>
-			<label>Wiek:</label> <input type="text" name="age"/>
-		</div>
-		<div>
-			<label>Data urodzin:</label> <input type="text" name="bday"/> 
-		</div>
-		<div>
-			<label>Telefon:</label> <input type="text" name="phone"/> 
-		</div>
-		<div>
-			<label>Email:</label> <input type="text" name="email"/> 
-		</div>
-				
-		<input type="submit" value="Zapisz"/>
-	</form>
+<h1>HTML5 - nowe elementy formularza</h1>
 
+<form id="form">
+    <div>
+        <label>Imię:</label> <input type="text" name="name"/>
+    </div>
+    <div>
+        <label>Wiek:</label> <input type="number" name="age"/>
+    </div>
+    <div>
+        <label>Data urodzin:</label> <input type="date" name="bday"/>
+    </div>
+    <div>
+        <label>Telefon:</label> <input type="tel" name="phone"/>
+    </div>
+    <div>
+        <label>Email:</label> <input type="email" name="email"/>
+    </div>
 
+    <input type="submit" value="Zapisz"/>
+</form>
+
+<script src="zepto.js"></script>
+<script>
+    (function (localStorage, $) {
+        var inputs = ["name", "bday", "phone", "age", "email"];
+
+        function toSelector(name) {
+            return "[name='" + name + "']";
+        }
+
+        function toZepto(selector) {
+            return $(selector);
+        }
+
+        function domToLocalStorage(zeptoElement, localStorage) {
+            localStorage.setItem(zeptoElement.attr("name"), zeptoElement.val());
+        }
+
+        function localStorageToDom(localStorage, zeptoElement) {
+            zeptoElement.val(localStorage.getItem(zeptoElement.attr("name")));
+        }
+
+        function addChangeListener(localStorage, zeptoElement) {
+            var callback = function () {
+                domToLocalStorage(zeptoElement, localStorage);
+            };
+            zeptoElement.change(callback).keyup(callback);
+            return zeptoElement;
+        }
+
+        var zeptoElements = inputs.map(toSelector).
+                map(toZepto).
+                map(addChangeListener.bind({}, localStorage));
+
+        zeptoElements.forEach(function (zeptoElement) {
+            localStorageToDom(localStorage, zeptoElement);
+        });
+
+    })(localStorage, $);
+
+</script>
 </body>
 </html>

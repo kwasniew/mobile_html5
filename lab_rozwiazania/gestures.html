@@ -23,6 +23,12 @@
 		var square = document.getElementById("square");
 
 		// Add your code here
+        document.addEventListener("touchmove", function(event) {
+            event.preventDefault(); // scroll prevention
+
+            square.style.webkitTransform = 'scale(' +
+                    event.scale +') rotate(' + event.rotation + 'deg)';
+        });
 	</script>
 </body>
 </html>
